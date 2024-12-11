@@ -27,7 +27,7 @@ const SocketProvider: React.FC<SocketProviderProps> = ({
 
   useEffect(() => {
     console.log("Context Mounted");
-    fetch("/api/socket");
+    fetch("https://ur-space-block-mania.vercel.app/api/socket");
     const newSocket = SocketIOClient(window.location.origin, {
       query: { name, colour },
     });
