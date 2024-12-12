@@ -449,8 +449,7 @@ const GameBoard: React.FC<GameBoardProps> = ({ setIsCustomized }) => {
       <button
         className="absolute top-10 right-1 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg shadow-lg hover:bg-red-700"
         onClick={() => {
-          window.location.href = homePageApi || "";
-          console.log(homePageApi);
+          window.location.href = "https://stream-battles.vercel.app/dashboard";
         }}
       >
         Quit
